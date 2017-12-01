@@ -24,7 +24,7 @@ def signup():
         error_count += 1
 #        return render_template('signup.html', username_error=username_error, username=username, email=email)
     if password == '' or password2 == '':
-        password_twice_error = "Please enter your password twice."
+        password_twice_error = "Please enter the same password twice."
         error_count += 1
 #        return render_template('signup.html', error=password_twice_error, username=username, email=email)
     for char in username:
@@ -49,7 +49,7 @@ def signup():
         error_count += 1
 #        return render_template('signup.html', error=error, username=username, email=email) 
     if password != password2:
-        password_match_error = "Your passwords do not match."
+        password_twice_error = "Please enter the same password twice."
         error_count += 1
 #        return render_template('signup.html', error=error, username=username, email=email)
     if e_len > 0:
